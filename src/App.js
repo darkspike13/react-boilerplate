@@ -1,10 +1,12 @@
 import {
   BrowserRouter as Router,
   Link,
-  Redirect,
+  //   Redirect,
   Route,
   Switch,
 } from 'react-router-dom';
+
+import Test from './frameworks/Test';
 
 const App = () => (
     <Router>
@@ -24,9 +26,6 @@ const App = () => (
             <Route path="/about">
                 <About />
             </Route>
-            <Route path="*">
-                <Redirect to="/" />
-            </Route>
             <Route path="/">
                 <Home />
             </Route>
@@ -35,7 +34,12 @@ const App = () => (
     </Router>
 );
 
-const Home = () => <h2>Home</h2>;
+const Home = () => (
+    <>
+        <h2>Home</h2>
+        <Test />
+    </>
+);
 const About = () => <h2>About</h2>;
 
 export default App;

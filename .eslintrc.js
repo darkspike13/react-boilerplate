@@ -19,10 +19,11 @@ module.exports = {
     'react',
   ],
   rules: {
-    'react/react-in-jsx-scope': 0,
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/jsx-indent': ['error', 4],
     'react/jsx-indent-props': ['error', 4],
+    'react/prop-types': [2, { ignore: ['children'] }],
+    'react/react-in-jsx-scope': 0,
     'no-use-before-define': 0,
   },
 };

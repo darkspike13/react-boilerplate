@@ -1,12 +1,15 @@
+$bg: #f0f0f3;
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: $bg;
+  font-family: 'Abel', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.footer {
-  height: auto;
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  color: #333;
 }

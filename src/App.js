@@ -1,32 +1,15 @@
 import {
   BrowserRouter as Router,
-  Link,
-  //   Redirect,
   Route,
   Switch,
 } from 'react-router-dom';
 
-import Test from './frameworks/Test';
+import Clock from './components/Clock/Clock';
 
 const App = () => (
     <Router>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
-                </ul>
-            </nav>
-        </header>
         <Switch>
-            <Route path="/about">
-                <About />
-            </Route>
-            <Route path="/">
+            <Route path="*">
                 <Home />
             </Route>
         </Switch>
@@ -36,10 +19,9 @@ const App = () => (
 
 const Home = () => (
     <>
-        <h2>Home</h2>
-        <Test />
+        <h2>Work in Progress</h2>
+        <Clock />
     </>
 );
-const About = () => <h2>About</h2>;
 
 export default App;

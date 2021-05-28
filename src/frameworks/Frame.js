@@ -1,9 +1,8 @@
-/* eslint-disable react/destructuring-assignment */
 import './Frame.scss';
 
-const Frame = (props) => (
+const Frame = ({ children }) => (
     <div className="frame">
-        {props.children}
+        {children}
     </div>
 );
 

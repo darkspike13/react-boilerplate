@@ -6,6 +6,8 @@ import {
   Switch,
 } from 'react-router-dom';
 
+import Chakra from './components/chakra/Chakra';
+
 const App = () => (
     <Router>
         <header>
@@ -13,6 +15,9 @@ const App = () => (
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/chakra">Chakra</Link>
                     </li>
                     <li>
                         <Link to="/about">About</Link>
@@ -23,6 +28,9 @@ const App = () => (
         <Switch>
             <Route path="/about">
                 <About />
+            </Route>
+            <Route path="/chakra">
+                <Chakra />
             </Route>
             <Route path="*">
                 <Redirect to="/" />

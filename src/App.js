@@ -4,7 +4,7 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import Clock from './components/Clock/Clock';
+import Home from './pages/Home';
 
 const App = () => (
     <Router>
@@ -15,13 +15,6 @@ const App = () => (
         </Switch>
         <footer />
     </Router>
-);
-
-const Home = () => (
-    <>
-        <h2>Work in Progress</h2>
-        <Clock />
-    </>
 );
 
 export default App;

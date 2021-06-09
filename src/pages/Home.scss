@@ -1,0 +1,18 @@
+@import '../styles/general.scss';
+
+.c-home {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &-clock {
+    }
+
+    &-socials {
+        position: absolute;
+        bottom: 0;
+        // right: 0;
+        padding-bottom: getSpace(10);
+    }
+}
